@@ -40,7 +40,7 @@ I have some experience with Java. Can you create 5-7 practice problems that cove
 # =============================================================================
 
 """
-PROBLEM 1: Personal Information (Variables & Data Types)
+ PROBLEM 1: Personal Information (Variables & Data Types)
 Difficulty: ⭐
 Create a program that stores and displays personal information using different data types.
 Instructions:
@@ -54,7 +54,16 @@ Name: Alice
 Age: 16 years
 Height: 5.4 feet
 Student Status: True
-Age in months: 192
+Age in months:192
+"""
+name = "Alice"
+age = 16
+height = 5.4
+student_status = True
+age_in_months = 12* age
+
+
+"""
 
 Problem 2: Simple Calculator (Variables, Input, Conditionals)
 Difficulty: ⭐⭐
@@ -72,6 +81,21 @@ Enter first number: 10
 Enter second number: 3
 Choose operation (+, -, *, /): *
 Result: 10.0 * 3.0 = 30.0
+"""
+first_num = int(input("Please input a number here:"))
+second_num = int(input("Please input a second number here:"))
+operation = input("Please choose an operation (+, -, *, /): ")
+if operation == "+":
+    result = first_num + second_num
+elif operation == "-":
+    result = first_num - second_num
+elif operation == "*":
+    result = first_num * second_num
+elif operation == "/":
+    result = first_num / second_num
+   
+
+"""
 
 Problem 3: Number Classifier (Conditionals & Loops)
 Difficulty: ⭐⭐
@@ -97,7 +121,8 @@ Enter number 2: -4
 Enter number 3: 0
 0 is zero and even
 You entered 1 positive number(s)
-
+"""
+"""
 Problem 4: Guess My Number (While Loops & Conditionals)
 Difficulty: ⭐⭐⭐
 Create a number guessing game using a while loop.
@@ -140,6 +165,8 @@ Example Output:
 Grades: [85, 92, 78, 88, 95]
 Average: 87.6
 Letter Grade: B
+"""
+"""
 
 Problem 6: To-Do List Manager (Lists & Functions)
 Difficulty: ⭐⭐⭐⭐
@@ -178,7 +205,8 @@ Removed: Call mom
 Final To-Do List:
 1. Buy groceries
 2. Study Python [DONE]
-
+"""
+"""
 Problem 7: Word Counter (Strings, Lists, Loops, Functions)
 Difficulty: ⭐⭐⭐⭐⭐
 Create a program that analyzes text and counts words.
