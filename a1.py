@@ -125,6 +125,21 @@ You entered 1 positive number(s)
 how_many_num = int(input("How many numbers do you want to enter?")) 
 positive_count = 0 
 
+for i in range (1, count +1):
+    number = int(input(f"Enter number {i}:") )
+    if number > 0:
+        sign = "postive"
+        positive_count += 1
+
+    elif number < 0:
+        sign = "negative"
+    else :
+        sign = "zero"
+        if number % 2 ==0
+        print (f "{}")
+        
+
+
 """
 Problem 4: Guess My Number (While Loops & Conditionals)
 Difficulty: ⭐⭐⭐
