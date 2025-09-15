@@ -135,7 +135,26 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    raise NotImplementedError("duck_duck_goose")
+position = 0
+current = "duck1"
+while len(lst) > 2:
+    if current == "duck1":
+        current = "duck2":
+        position += 1
+    elif current == "duck2":
+        current = "goose"
+        position += 1
+    else: # current is goose
+        current = "duck1"
+        lst.pop(position)
+
+        # wrap around
+        if position == len(lst):
+            position = 0
+
+ return lst
+
+
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
@@ -148,11 +167,12 @@ if __name__ == "__main__":
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
     assert sum_list([4, 7, 10,23,7]) == 51, "sum_list of [4,7,10,23,7] failed"
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
-    assert mean ([1,2,3,4,5,6]) == 21/6 "mean of [1,2,3,,4,5,6] failed"
-    assert mean ([]) == 0 "mean of [] failed"
+    assert mean ([1,2,3,4,5,6]) == 21/6, "mean of [1,2,3,,4,5,6] failed"
+    assert mean ([]) == 0, "mean of [] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
     assert median([1, 2, 3, 4, 6,6]) == 3.5, "median of [1,2,3,4,6,6] failed"
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
     assert duck_duck_goose(names) == ["roscoe", "law"]
+    names = ["avery","levi ", "ashley", "victoria", "maddox"], 
 
     print("All tests passed!")

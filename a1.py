@@ -122,6 +122,9 @@ Enter number 3: 0
 0 is zero and even
 You entered 1 positive number(s)
 """
+how_many_num = int(input("How many numbers do you want to enter?")) 
+positive_count = 0 
+
 """
 Problem 4: Guess My Number (While Loops & Conditionals)
 Difficulty: ⭐⭐⭐
@@ -168,78 +171,7 @@ Letter Grade: B
 """
 """
 
-Problem 6: To-Do List Manager (Lists & Functions)
-Difficulty: ⭐⭐⭐⭐
-Build a simple to-do list program with multiple functions.
-Instructions:
-Create these functions:
 
-add_task(todo_list, task) - adds a task to the list
-remove_task(todo_list, task) - removes a task from the list
-show_tasks(todo_list) - displays all tasks with numbers
-mark_complete(todo_list, task_number) - marks a task as complete by adding "[DONE]" to it
-
-In your main program:
-
-Start with an empty list
-Add at least 3 tasks
-Display the list
-Mark one task as complete
-Remove one task
-Display the final list
-
-Example Output:
-Added: Buy groceries
-Added: Study Python
-Added: Call mom
-
-To-Do List:
-1. Buy groceries
-2. Study Python
-3. Call mom
-
-Marked task 2 as complete
-
-Removed: Call mom
-
-Final To-Do List:
-1. Buy groceries
-2. Study Python [DONE]
-"""
-"""
-Problem 7: Word Counter (Strings, Lists, Loops, Functions)
-Difficulty: ⭐⭐⭐⭐⭐
-Create a program that analyzes text and counts words.
-Instructions:
-Create these functions:
-
-count_words(text) - returns the total number of words
-find_longest_word(text) - returns the longest word
-count_word_frequency(text, word) - returns how many times a specific word appears (case-insensitive)
-
-In your main program:
-
-Ask user for a sentence
-Use all three functions to analyze the text
-Display the results in a nice format
-
-Example Input/Output:
-Enter a sentence: The quick brown fox jumps over the lazy dog. The dog runs fast.
-
-Text Analysis Results:
-- Total words: 12
-- Longest word: jumps
-- How many times does 'the' appear? 2
-- How many times does 'dog' appear? 2
-
-
-Example:
-Problem: Write a function called 'is_even' that takes an integer and returns 
-True if the number is even, False if it's odd.
-
-Example inputs/outputs:
-- is_even(4) should return True
-- is_even(7) should return False
 """
 
 
