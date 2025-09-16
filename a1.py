@@ -21,7 +21,7 @@ Remember: The goal is to LEARN, not just get working code!
 """
 MY ORIGINAL AI PROMPT:
 I'm learning Python basics in a high school programming class.
- I have some experience with I'm new to programming'.
+ I have some experience with Javascript but it has been a while so I'm sort of new to programming.
    Can you create 5-7 practice problems that cover:
      > - Variables and basic data types
        > - Conditionals (if/elif/else) 
@@ -82,18 +82,19 @@ Enter second number: 3
 Choose operation (+, -, *, /): *
 Result: 10.0 * 3.0 = 30.0
 """
-first_num = int(input("Please input a number here:"))
-second_num = int(input("Please input a second number here:"))
-operation = input("Please choose an operation (+, -, *, /): ")
-if operation == "+":
-    result = first_num + second_num
-elif operation == "-":
-    result = first_num - second_num
-elif operation == "*":
-    result = first_num * second_num
-elif operation == "/":
-    result = first_num / second_num
-   
+def simple_calc():
+    first_num = int(input("Please input a number here:"))
+    second_num = int(input("Please input a second number here:"))
+    operation = input("Please choose an operation (+, -, *, /): ")
+    if operation == "+":
+        result = first_num + second_num
+    elif operation == "-":
+        result = first_num - second_num
+    elif operation == "*":
+        result = first_num * second_num
+    elif operation == "/":
+        result = first_num / second_num
+    return result
 
 """
 
@@ -122,10 +123,11 @@ Enter number 3: 0
 0 is zero and even
 You entered 1 positive number(s)
 """
+
 how_many_num = int(input("How many numbers do you want to enter?")) 
 positive_count = 0 
 
-for i in range (1, count +1):
+for i in range (1, how_many_num +1):
     number = int(input(f"Enter number {i}:") )
     if number > 0:
         sign = "postive"
@@ -135,8 +137,11 @@ for i in range (1, count +1):
         sign = "negative"
     else :
         sign = "zero"
-        if number % 2 ==0
-        print (f "{}")
+        if number % 2 == 0:
+            parity = "even"
+        else:
+            parity = "odd"
+
         
 
 
@@ -160,7 +165,26 @@ Enter your guess: 25
 Too low!
 Enter your guess: 42
 Congratulations! You got it in 3 attempts!
+"""
+def guess_a_number():
+    secret_number = 42
+    attempts = 0
+    guessed_correctly = False
+    print("I'm thinking of a number between 1-100")
 
+    while not guessed_correctly:
+        guess = int(input("Please enter your guess: " ))
+        attempts += 1
+
+        if guess > secret_number:
+            print("Too high!")
+        elif guess < secret_number:
+            print("Too Low!")
+        else:
+            guessed_correctly = True
+            print(f"Congratulations! You got it in {attempts} attempts!")
+
+"""
 Problem 5: Grade Average Calculator (Functions & Lists)
 Difficulty: ⭐⭐⭐
 Create functions to work with a list of grades.
@@ -184,7 +208,30 @@ Grades: [85, 92, 78, 88, 95]
 Average: 87.6
 Letter Grade: B
 """
+def calculate_average(grades):
+    total = sum(grades)
+    count = len (grades)
+    average = total / count
+    return average
+
+def  get_letter_grade(average):
+    if average >= 90:
+        return "A"
+    if average >= 80:
+        return "B"
+    if average >=70:
+        return "C"
+    if average >= 60:
+        return "D"
+    else:
+        return "F"
+    
+    Grades = [54,67,78,89,97]
+    average = calculate_average(grades)
+    letter_grade = get_letter_grade(average)
+
 """
+
 
 
 """
@@ -220,10 +267,10 @@ print("Testing Problem 1:")
 
 print("\nTesting Problem 2:")
 # Add your tests here
-
+print(simple_calc())
 print("\nTesting Problem 3:")
 # Add your tests here
-
+print()
 print("\nTesting Problem 4:")
 # Add your tests here
 

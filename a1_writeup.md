@@ -1,5 +1,5 @@
 # Assignment 1 - Write UP
-
+Miranda Escobar's Write UP
 ## Description
 This is the portion of the assignment that will be graded.  I will be looking at your other files, and specifically either `a1.py` or `a1_practice_problems.py`.  I will be looking to see that you completed the problems or used a generative AI to help you come up with and complete some challenge questions.  This document will help guide you through that process.
 
@@ -20,7 +20,7 @@ After completing your problems, reflect on:
 My intial expierence with python was that it refreshed some of my memory when coding. Prior to this, I had experience in html, and javascript whichi haven't done in over a year so I was a bit risty to it. But after using it, it became more familar and i find it a little more self-explanatory. For example, when doing a else if loop its elif instead, 
 
 2. **How did you use AI effectively?** Give specific examples of good prompts you used and what you learned from the responses.
-I used AI effectively by 
+I used AI effectively by reflecting on parts that i didn't know how to do. For example winstead of asking directly for the answer, 
 3. **What concepts were most challenging?** How did AI help you understand them?
  The concept that was most confusing was probably the practice problems but the 
  AI helped me understand 
