@@ -273,8 +273,9 @@ print("\nTesting Problem 3:")
 print()
 print("\nTesting Problem 4:")
 # Add your tests here
-
+print(guess_a_number())
 print("\nTesting Problem 5:")
 # Add your tests here
-
+print(calculate_average())
+print(get_letter_grade())
 
