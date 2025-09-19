@@ -20,12 +20,12 @@ Remember: The goal is to **learn programming** while building **AI collaboration
 | Criteria | Points Possible | Points Earned | Comments |
 |----------|----------------|---------------|----------|
 | **Programming Completion** | | | |
-| a1.py Functions Complete | 3 | | |
-| a1_practice_problems.py Complete | 3 | | |
+| a1.py Functions Complete | 3 | 3 | |
+| a1_practice_problems.py Complete | 3 | 2 | There are some indentation errors in your program.  Try to fix them, or ask me and I'll help you with them. |
 | **Reflection & Learning** | | | |
-| AI Collaboration Process | 2 | | |
-| Learning Reflection Quality | 2 | | |
-| **TOTAL** | **10** | | |
+| AI Collaboration Process | 2 | 2 | |
+| Learning Reflection Quality | 2 | 1 | Missing the answer to the last question, and your responses could be a little more detaile, except the first questions, that was great. |
+| **TOTAL** | **10** | 8 | |
 
 ---
 
