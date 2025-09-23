@@ -92,8 +92,8 @@ def mean(lst: List[int]) -> float:
 
     Returns:
         the mean of the passed in list
-    """
-return sum_list(lst) / len(lst) else 0
+    """ 
+    return sum_list(lst) / len (lst) if lst else 0 
 
 
 def median(lst: List[int]) -> float:
@@ -108,12 +108,15 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-   if len(lst)% 2 == 1:
-      return lst[len(lst) // 2 ]
-else:
-    m1 = len/lst /2
-    m2 = m1  - 1 
-    return(lst[m1]+ lst[m2]) /2
+  #
+  #    return lst[len(lst) // 2 ]
+#else:
+    #m1 = len/lst /2
+    #m2 = m1  - 1 
+    #return(lst[m1]+ lst[m2]) /2
+
+    return (lst[len(lst) //2] + lst[len(lst) //2 - 1]) / 2 if len (lst) % 2 == 0 else lst[len(lst) //2] 
+
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
@@ -135,28 +138,23 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-position = 0
-current = "duck1"
-while len(lst) > 2:
-    if current == "duck1":
-        current = "duck2":
-        position += 1
-    elif current == "duck2":
-        current = "goose"
-        position += 1
-    else: # current is goose
-        current = "duck1"
-        lst.pop(position)
-
-        # wrap around
-        if position == len(lst):
+    position = 0
+    current = "duck1"
+    while len(lst) > 2:
+        if current == "duck1":
+            current = "duck2"
+            position += 1
+        elif current == "duck2":
+            current = "goose"
+            position += 1
+        else:
+            current = "duck1"
+            lst.pop (position)
+        if position == len(lst) :
             position = 0
-
- return lst
-
-
-
-
+    return lst
+        
+    
 # this line causes the nested code to be skipped if the file is imported instead of run
 if __name__ == "__main__":
     assert absolute(-1) == 1, "absolute of -1 failed"
